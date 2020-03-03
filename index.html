@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <title>Porfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+         body{
+             font-size: 12px;
+             font-family: 'Ubuntu',;
+        }
+         ul li{
+                list-style-type: none;
+            }
+            a{
+                text-decoration: none;
+            }
+            menu{
+                display: flex;
+                justify-content: flex-end;
+                padding: 1em;
+                flex-direction: row;
+                font-family: 'Ubuntu', ;
+            }
+            menu select, menu a, menu ul{
+                padding: 0 1em;
+
+            }
+            menu select{
+                border: none;
+            }
+        #ull{
+            z-index: -5;
+        }
+        .nombre h1{
+            width: 50%;
+            height: 30%;
+                font-size: 50px;
+               /* overflow: hidden;
+               transform: translate(-400px, 0);
+               transition: 4s transform;*/
+           }
+        .nombre:hover h1{
+            transform: rotate(-90deg);
+            transition: 4s transform;
+            z-index: 5;
+           }
+      
+        h2{
+            font-size: 11px;
+            font-weight: 400;
+        }
+        h3{
+            font-size: 7em;
+            font-weight: 700;
+            margin: 1em 0 0 0;
+        }
+       
+        p{
+            display: flex;
+            font-size: 11px;
+            font-weight: 400;
+            margin: 1em;
+    
+        }
+        h4{
+            font-size: 3em;
+            font-weight: 600;
+        }
+          #trabajo1, #trabajo2, #trabajo3, #trabajo4, #trabajo5{
+              padding: 20px;  
+              margin: auto;
+           }
+        /* #trabajo1{
+            width: 50%;
+        }
+         #trabajo2{
+            width: 60%;
+        }
+         #trabajo3{
+            width: 70%;
+        }
+         #trabajo4{
+            width: 70%;
+        }
+        #trabajo5{
+            width: 70%;
+        }*/
+        #contenido{
+            z-index: 5;
+            margin-top: 2em;
+        }
+        #roswell{
+            top: -80px;
+            right: -70px;
+        }
+        #alien{
+             margin-top: 15em;
+        }
+        #asangre{
+            margin-top: 5em;
+        }
+        #iggy{
+            margin-top: 6em;
+        }
+        #bauhaus{
+            margin-top: 5em;
+        }
+        #clinkitas{
+            margin-top: 4em;
+            bottom: -160px;
+        }
+        footer{
+            width: 80%;
+            display: flex;
+            margin: 13em;
+            padding: 3em 0 0 0;
+            font-weight: 300;
+            font-size: 8pt;
+            justify-content: center;
+            font-style: normal;
+            border-top: 1px solid steelblue;
+        }
+        .fechafooter{
+            width: 10%;
+        }
+        #mancha1 {
+            width: 25%;
+            height: 130%;
+            position: absolute;
+            z-index: -5;
+            background-color: steelblue;
+            
+        }
+        #mancha2 {
+            width: 35%;
+            height: 200px;
+            position: absolute;
+            right: 290px;
+            z-index: -5;
+            background-color: steelblue;
+            top: 950px;
+        }
+        #mancha3 {
+            width: 35%;
+            height: 450px;
+            position: absolute;
+            right: 295px;
+            z-index: -5;
+            right: 255px;
+            background-color: steelblue;  
+            top: 1565px;
+        }
+        #mancha4 {
+            width: 54%;
+            height: 390px;
+            position: absolute;
+            right: -10px;
+            z-index: -5;
+            right: -10px;
+            background-color: steelblue;  
+            top: 2450px;
+        }
+        #mancha5 {
+            width: 40%;
+            height: 500px;
+            position: absolute;
+            left: 280px;
+            z-index: -5;
+            right: -10px;
+            background-color: steelblue;  
+            top: 2945px;
+        }
+        #mancha6 {
+            width: 60%;
+            height: 300px;
+            position: absolute;
+            left: -10px;
+            z-index: -5;
+            right: -10px;
+            background-color: steelblue;  
+            top: 3790px;
+        }
+        #mancha7 {
+            width: 35%;
+            height: 250px;
+            position: absolute;
+            left: 250px;
+            z-index: -5;
+            right: -10px;
+            background-color: steelblue;  
+            top: 4460px;
+        }
+        @media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+                    body{
+                        background: steelblue;
+                    } 
+                    .container-fluid{
+                    grid-template: repeat(4,1fr) / repeat(2, 1fr);
+                }
+                }    
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid">
+         <div class="nombre">
+                <h1>Marina</h1>
+            </div>
+           <div id="mancha1"></div>
+             <menu> 
+               <select name="language" id="idiomas">
+                   <option value"#">Español</option>
+                   <option value"#">Spagnolo</option>
+                   <option value"#">Espagnol</option>
+                   <option value="#">Spanish</option>
+               </select>
+                  <ul>
+                   <li><a href="https://www.instagram.com/marina_uribe/"><i class="fab fa-instagram"></i></a></li>
+                   <li><a href="whatshap.html"><i class="fab fa-whatsapp"></i></a></li>
+                   <li><a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
+                   <li><a href="https://github.com/marina-uribe"><i class="fab fa-github"></i></a></li>
+                  </ul>
+        </menu>
+           <div class="offset-4 col-8" id="ull">
+            <img class="img-fluid" src="img/ojo.jpg">
+        </div>
+        <h2 class="offset-7 col-5">Este es el porfolio de Marina Vázquez Uribe y aquí se verán algunos trabajos que se han realizado durante los estudios de Grafica Publicitaria espero que os gusten u osparezcan interesantes.</h2>
+    </header>
+    <main class="container-fluid">
+        <div id="indice">
+            <div class="row">
+                <h3 id="contenido" class="offset-4 col6">Contenido</h3>
+            </div>
+            <div id="mancha2"></div>
+            <div class="offset-5 col6">
+                <p>Roswell (Editorial)</p>
+                <p>A sangre fría (Cartel)</p>
+                <p>Vinilo Iggy Azalea (Packaging, lettering)</p>
+                <p>Bauhaus (Editotial)</p>
+                <p>Clinkitas (Logo y packaging)</p>
+            </div>
+        </div>
+        <div id="trabajo1">
+            <div class="row">
+               <div class="offset-4 col-3">
+                <img id="alien" class="img-fluid" src="img/FINAL9.jpg">
+                </div>
+            </div>
+            <div>
+                <h4 id="roswell" class="offset-7 col-4">Roswell</h4>
+            </div>
+            <div id="mancha3"></div>
+            <div class="offset-3 col-3">
+                <img class="img-fluid" src="img/FINAL28.jpg">
+            </div>
+            <div class="offset-7 col-3">
+                <img class="img-fluid" src="img/FINAL.jpg">
+            </div>
+            
+        </div>
+            <div id="trabajo2">
+            <div>
+                <h4 id="asangre" class="offset-5 col-7">A Sanfre Fría</h4>
+            </div>
+            <div id="mancha4"></div>
+            <div class="offset-9 col-3">
+                <img  src="img/Cartel%20Tipogr%C3%A1foco%20sin%20marcas%20recorte.jpg">
+            </div>
+            </div>
+            <div id="trabajo3">
+            <div class="row">
+               <div id="iggy" class="offset-4 col-9">
+                <h4 class="img-fluid">Vinilo Iggy Azalea</h4>
+                </div>
+            </div>
+            <div class="row">
+               <div class="offset-2 col-4">
+                <img class="img-fluid" src="img/Pag%203.jpg">
+                </div>
+            </div>
+            <div id="mancha5"></div>
+            <div  class="offset-7 col-4">
+                <img class="img-fluid" src="img/iggy-azalea-f-ck-it-(2)-gthumb-gwdata1200-ghdata1200-gfitdatamax.jpg">
+            </div>
+            <div id="mancha5"></div>
+            </div>
+            <div id="trabajo4">
+            <div class="offset-6 col-4">
+                <h4 id="bauhaus" class="img-fluid">Bauhaus</h4>
+            </div>
+            <div class="row">
+               <div class="offset-4 col-3" >
+                <img class="img-fluid" src="img/BANHAUS26.jpg">
+                </div>
+                <div id="mancha6"></div>
+            </div>
+            </div>
+            <div id="trabajo5">
+               <div class="offset-6 col-5">
+                <h4 id="clinkitas">Clinkitas</h4>
+                </div>
+                <div class="row">
+                  <div class="offset-3 col-2">
+                   <img class="img-fluid" src="img/Trabajo%2011.jpg">
+                   </div>
+                   <div id="mancha7"></div>
+                </div>
+            </div>
+    </main>
+    <footer>
+           <div class="textofinal">
+                <p>Esto ha sido todo, muchas gracias por visitar mi porfolio, espero que os haya parecido interesante</p>
+            </div>
+            <div calss="fechafooter">
+                <i class="fas fa-chevron-up"></i>
+             </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
